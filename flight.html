@@ -23,7 +23,7 @@
       <!-- Navigation Bar -->
       <nav class="flex items-center justify-between py-4">
         <div class="text-3xl font-cursive text-blue-400">Airline</div>
-        <ul class="flex space-x-6 text-lg hidden md:flex">
+        <ul class="flex space-x-6 text-lg">
           <li><a href="user_data.html" class="hover:text-blue-400 transition">Home</a></li>
           <li><a href="booking.html" class="hover:text-blue-400 transition">Booking</a></li>
           <li><a href="ticket_cancel.html" class="hover:text-blue-400 transition">Ticket Cancellation</a></li>
@@ -34,12 +34,10 @@
       </nav>
 
       <!-- Flight List Section -->
-      <div class="container mx-auto mt-10 max-w-7xl px-4">
+      <div class="container mx-auto mt-10 max-w-4xl">
         <h2 class="text-center text-3xl font-semibold text-blue-400 mb-8">Available Flights</h2>
 
-        <!-- Flight Cards Container -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-
+        <div class="flex flex-col gap-6">
           <!-- Flight Card Template -->
           <div class="bg-white text-gray-800 p-6 rounded-xl shadow-md hover:shadow-xl transition">
             <div class="flex justify-between font-semibold text-lg mb-3">
@@ -63,6 +61,7 @@
           </div>
 
           <!-- Repeat for other flights -->
+
           <div class="bg-white text-gray-800 p-6 rounded-xl shadow-md hover:shadow-xl transition">
             <div class="flex justify-between font-semibold text-lg mb-3">
               <span>Flight Number: AI305</span>
