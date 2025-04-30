@@ -1,0 +1,242 @@
+/* ======= Reset default styles ======= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ======= Body Styling ======= */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffffa6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url("air1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+/* ======= Block Content Styling ======= */
+
+.my-block {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    margin-top: 80px;
+    /* Adjusted margin to account for the fixed navbar */
+}
+
+
+/* ======= Navigation Bar ======= */
+
+/* Basic Navbar Styling */
+.navbar {
+    width: 100%;
+    background-color: rgba(114, 167, 237, 0.942);
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between; /* Airline on left, links on right */
+    align-items: center;
+}
+
+/* Brand Logo or Text */
+.navbar-brand {
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Navbar List */
+.navbar-list {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar List Items */
+.navbar-list li {
+    margin-left: 20px;
+    position: relative;
+}
+
+/* Vertical Line Between Items */
+.navbar-list li:not(:last-child) {
+    border-right: 2px solid rgba(255, 255, 255, 0.5);
+    padding-right: 20px;
+}
+
+/* Navbar Links */
+.navbar-link {
+    color: rgb(248, 249, 242);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    position: relative;
+}
+
+/* Underline Effect */
+.navbar-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(19, 102, 185);
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar-link:hover::before {
+    width: 100%;
+}
+
+.navbar-link:hover {
+    color: rgb(19, 102, 185);
+    transform: translateY(-2px);
+}
+
+
+/* Optional: Responsive navbar */
+@media (max-width: 768px) {
+    .navbar-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-list li {
+        margin-bottom: 10px;
+        border-right: none; /* Remove vertical lines for mobile view */
+    }
+}
+
+
+
+/* ======= Login Form ======= */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 80px;
+    /* Offset for navbar height */
+}
+
+.login-form {
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    transition: box-shadow 0.3s ease;
+}
+
+.login-form:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+
+.form-footer {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #226dd0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0a34de;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #4caf50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+    color: #388e3c;
+}
+
+
+/* ======= Responsive Enhancements ======= */
+
+@media (max-width: 768px) {
+    .navbar-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar-list li {
+        margin: 10px 0;
+    }
+    .login-form {
+        width: 90%;
+        padding: 20px;
+    }
+}   2

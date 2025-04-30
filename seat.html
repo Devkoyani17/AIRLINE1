@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Seat Layout - Airline</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .font-cursive {
+      font-family: 'Pacifico', cursive;
+    }
+    .seat {
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      font-weight: 600;
+      border-radius: 8px;
+    }
+    .empty {
+      background-color: #77dd77;
+    }
+    .taken {
+      background-color: #ff6961;
+    }
+    .vip {
+      border: 2px solid gold;
+    }
+    .vip-seat-box {
+      border: 2px solid gold;
+      background-color: #77dd77;
+    }
+  </style>
+</head>
+<body class="text-white">
+
+<!-- Background -->
+<div class="min-h-screen bg-cover bg-center" style="background-image: url('air1.jpg');">
+  <div class="bg-black bg-opacity-70 min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="flex items-center justify-between px-6 py-4 flex-wrap relative z-10">
+      <div class="text-3xl font-cursive text-blue-400">Airline</div>
+
+      <button id="menu-toggle" class="md:hidden text-white text-2xl focus:outline-none">
+        ☰
+      </button>
+
+      <ul id="menu" class="w-full md:w-auto md:flex md:space-x-6 text-lg space-y-2 md:space-y-0 mt-4 md:mt-0 hidden md:flex">
+        <li><a href="user_data.html" class="block hover:text-blue-400 transition">Home</a></li>
+        <li><a href="booking.html" class="block hover:text-blue-400 transition">Booking</a></li>
+        <li><a href="ticket_cancel.html" class="block hover:text-blue-400 transition">Ticket Cancellation</a></li>
+        <li><a href="support1.html" class="block hover:text-blue-400 transition">Support</a></li>
+        <li><a href="index.html" class="block hover:text-blue-400 transition">Logout</a></li>
+        <li><a href="about.html" class="block hover:text-blue-400 transition">About Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- Page Title -->
+    <div class="text-center pt-10 pb-4 px-4">
+      <h1 class="text-3xl sm:text-4xl font-bold text-blue-400">Airplane Seat Layout</h1>
+      <p class="text-gray-300 mt-2 text-base sm:text-lg">Select your seat below</p>
+    </div>
+
+    <!-- White Content Box -->
+    <div class="max-w-5xl mx-auto bg-white bg-opacity-90 rounded-xl shadow-2xl p-4 sm:p-8 mt-8 text-gray-800">
+
+      <!-- VIP Section -->
+      <h2 class="text-xl sm:text-2xl font-semibold text-black text-center mb-6">✨ VIP Section</h2>
+      <div class="grid grid-cols-3 sm:grid-cols-4 gap-4 justify-center mb-10">
+        <!-- Repeat seat blocks -->
+        <div class="seat vip empty">A1</div>
+        <div class="seat vip taken">A2</div>
+        <div class="seat vip empty">A3</div>
+        <div class="seat vip taken">A4</div>
+        <div class="seat vip empty">B1</div>
+        <div class="seat vip empty">B2</div>
+        <div class="seat vip taken">B3</div>
+        <div class="seat vip empty">B4</div>
+        <div class="seat vip empty">C1</div>
+        <div class="seat vip empty">C2</div>
+        <div class="seat vip empty">C3</div>
+        <div class="seat vip taken">C4</div>
+        <div class="seat vip empty">D1</div>
+        <div class="seat vip taken">D2</div>
+        <div class="seat vip empty">D3</div>
+        <div class="seat vip taken">D4</div>
+        <div class="seat vip empty">E1</div>
+        <div class="seat vip empty">E2</div>
+        <div class="seat vip taken">E3</div>
+        <div class="seat vip empty">E4</div>
+      </div>
+
+      <!-- General Section -->
+      <h2 class="text-xl sm:text-2xl font-semibold text-black text-center mb-6">🪑 General Section</h2>
+      <div class="grid grid-cols-3 sm:grid-cols-4 gap-4 justify-center mb-10">
+        <div class="seat empty">F1</div>
+        <div class="seat taken">F2</div>
+        <div class="seat empty">F3</div>
+        <div class="seat taken">F4</div>
+        <div class="seat taken">G1</div>
+        <div class="seat empty">G2</div>
+        <div class="seat taken">G3</div>
+        <div class="seat empty">G4</div>
+        <div class="seat empty">H1</div>
+        <div class="seat taken">H2</div>
+        <div class="seat empty">H3</div>
+        <div class="seat empty">H4</div>
+        <div class="seat taken">I1</div>
+        <div class="seat empty">I2</div>
+        <div class="seat empty">I3</div>
+        <div class="seat taken">I4</div>
+        <div class="seat empty">J1</div>
+        <div class="seat taken">J2</div>
+        <div class="seat empty">J3</div>
+        <div class="seat empty">J4</div>
+      </div>
+
+      <!-- Button -->
+      <div class="text-center mt-4">
+        <a href="detail.html">
+          <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition duration-300 shadow-md w-full sm:w-auto">
+            BOOK NOW
+          </button>
+        </a>
+      </div>
+
+      <!-- Legend -->
+      <div class="mt-10 flex flex-col sm:flex-row justify-center items-center gap-6 text-sm text-gray-800">
+        <div class="flex items-center gap-2">
+          <div class="w-5 h-5 bg-[#77dd77] rounded-sm"></div>
+          Empty
+        </div>
+        <div class="flex items-center gap-2">
+          <div class="w-5 h-5 bg-[#ff6961] rounded-sm"></div>
+          Taken
+        </div>
+        <div class="flex items-center gap-2">
+          <div class="w-5 h-5 vip-seat-box rounded-sm"></div>
+          VIP
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Script to toggle navbar -->
+<script>
+  document.getElementById('menu-toggle').addEventListener('click', function () {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('hidden');
+  });
+</script>
+
+</body>
+</html>

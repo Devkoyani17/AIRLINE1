@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Choose Role</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+    }
+    .font-cursive {
+      font-family: 'Pacifico', cursive;
+    }
+  </style>
+</head>
+<body class="text-white">
+
+  <!-- Fullscreen Background with Overlay -->
+  <div class="min-h-screen bg-cover bg-center relative flex flex-col" style="background-image: url('air1.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
+
+    <!-- Navbar -->
+    <nav class="flex flex-wrap items-center justify-between px-6 md:px-8 py-4 bg-transparent relative z-10">
+      <div class="text-2xl md:text-3xl font-cursive text-blue-400">Airline</div>
+      <ul class="flex flex-wrap justify-center gap-4 md:gap-6 text-base md:text-lg mt-4 md:mt-0">
+        <li><a href="index.html" class="hover:text-blue-400 transition">Home</a></li>
+        <li><a href="login_check.html" class="hover:text-blue-400 transition">Login</a></li>
+        <li><a href="support.html" class="hover:text-blue-400 transition">Support</a></li>
+        <li><a href="about.html" class="hover:text-blue-400 transition">About Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- Welcome Message + Role Selection -->
+    <div class="flex-grow flex justify-center items-center relative z-10 px-4">
+      <!-- Responsive container -->
+      <div class="text-center bg-white bg-opacity-10 p-6 md:p-10 rounded-2xl shadow-2xl backdrop-blur-sm w-full max-w-md sm:max-w-lg">
+        <h1 class="text-3xl md:text-5xl font-cursive text-blue-400 mb-3 md:mb-4 drop-shadow-md">Welcome to</h1>
+        <h2 class="text-xl md:text-3xl font-semibold text-white mb-4 md:mb-6">Airline Reservation System</h2>
+        
+        <p class="text-sm md:text-lg text-gray-200 mb-6 md:mb-8">
+          Book flights, explore the world, and manage your journeys all in one place.
+        </p>
+
+        <!-- Responsive: Buttons stack on small screens -->
+        <div class="flex flex-col sm:flex-row justify-center gap-4 sm:gap-8">
+          <a href="admin.html" class="w-full sm:w-auto px-6 py-3 md:px-8 md:py-4 bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 rounded-xl shadow-lg text-white text-base md:text-lg font-semibold transition transform hover:scale-105 text-center">
+            Admin Dashboard
+          </a>
+          <a href="user.html" class="w-full sm:w-auto px-6 py-3 md:px-8 md:py-4 bg-gradient-to-r from-green-500 to-green-700 hover:from-green-600 hover:to-green-800 rounded-xl shadow-lg text-white text-base md:text-lg font-semibold transition transform hover:scale-105 text-center">
+            User Portal
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

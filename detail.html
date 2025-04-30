@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Customer Details - Airline Reservation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .font-cursive {
+      font-family: 'Pacifico', cursive;
+    }
+
+    .form-container {
+      background-color: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(8px);
+    }
+  </style>
+</head>
+
+<body class="text-white">
+
+  <!-- Background -->
+  <div class="min-h-screen bg-cover bg-center" style="background-image: url('air1.jpg');">
+    <div class="bg-black bg-opacity-60 min-h-screen">
+
+      <!-- Navbar -->
+      <nav class="flex flex-col md:flex-row items-center justify-between px-4 md:px-8 py-4 space-y-4 md:space-y-0">
+        <div class="text-3xl font-cursive text-blue-400">Airline</div>
+        <ul class="flex flex-col md:flex-row md:space-x-6 text-lg items-center gap-2 md:gap-0">
+          <li><a href="index.html" class="hover:text-blue-400 transition">Home</a></li>
+          <li><a href="booking.html" class="hover:text-blue-400 transition">Booking</a></li>
+          <li><a href="ticket_cancel.html" class="hover:text-blue-400 transition">Ticket Cancellation</a></li>
+          <li><a href="support1.html" class="hover:text-blue-400 transition">Support</a></li>
+          <li><a href="about.html" class="hover:text-blue-400 transition">About Us</a></li>
+          <li><a href="index.html" class="hover:text-blue-400 transition">Logout</a></li>
+        </ul>
+      </nav>
+
+      <!-- Form Section -->
+      <div class="flex justify-center items-center px-4 sm:px-6 pt-6 pb-20">
+        <div class="form-container rounded-2xl p-6 sm:p-10 w-full max-w-4xl shadow-2xl text-gray-800">
+          <h2 class="text-2xl sm:text-3xl font-bold text-center text-blue-600 mb-6 sm:mb-10">Customer Details</h2>
+          <form action="payment.html" method="get">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label for="full-name" class="font-semibold">Full Name</label>
+                <input type="text" id="full-name" name="full_name" placeholder="Enter your full name" class="w-full mt-2 p-3 border rounded-lg" />
+              </div>
+              <div>
+                <label for="email" class="font-semibold">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" class="w-full mt-2 p-3 border rounded-lg" />
+              </div>
+              <div>
+                <label for="phone" class="font-semibold">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" class="w-full mt-2 p-3 border rounded-lg" />
+              </div>
+              <div>
+                <label for="passport" class="font-semibold">Passport Number</label>
+                <input type="text" id="passport" name="passport" placeholder="Enter your passport number" class="w-full mt-2 p-3 border rounded-lg" />
+              </div>
+              <div>
+                <label for="dob" class="font-semibold">Date of Birth</label>
+                <input type="date" id="dob" name="dob" class="w-full mt-2 p-3 border rounded-lg" />
+              </div>
+              <div>
+                <label for="gender" class="font-semibold">Gender</label>
+                <select id="gender" name="gender" class="w-full mt-2 p-3 border rounded-lg">
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div>
+                <label for="num-passengers" class="font-semibold">Number of Passengers</label>
+                <input type="number" id="num-passengers" name="num_passengers" min="1" max="10" placeholder="Enter number of passengers" class="w-full mt-2 p-3 border rounded-lg" />
+              </div>
+              <div>
+                <label for="age-group" class="font-semibold">Age Group</label>
+                <select id="age-group" name="age_group" class="w-full mt-2 p-3 border rounded-lg">
+                  <option value="adult">Adult</option>
+                  <option value="child">Child</option>
+                  <option value="infant">Infant</option>
+                </select>
+              </div>
+              <div class="md:col-span-2">
+                <label for="special-requests" class="font-semibold">Special Requests</label>
+                <textarea id="special-requests" name="special_requests" rows="4" placeholder="Any special requests (e.g., meal preferences, wheelchair assistance)" class="w-full mt-2 p-3 border rounded-lg"></textarea>
+              </div>
+              <div>
+                <label for="billing-address" class="font-semibold">Street Address</label>
+                <input type="text" id="billing-address" name="billing_address" placeholder="Enter your billing address" class="w-full mt-2 p-3 border rounded-lg" />
+              </div>
+              <div>
+                <label for="city" class="font-semibold">City</label>
+                <input type="text" id="city" name="city" placeholder="Enter your city" class="w-full mt-2 p-3 border rounded-lg" />
+              </div>
+              <div>
+                <label for="postal-code" class="font-semibold">Pin Code</label>
+                <input type="text" id="postal-code" name="postal_code" placeholder="Enter your pin code" class="w-full mt-2 p-3 border rounded-lg" />
+              </div>
+              <div>
+                <label for="country" class="font-semibold">Country</label>
+                <input type="text" id="country" name="country" placeholder="Enter your country" class="w-full mt-2 p-3 border rounded-lg" />
+              </div>
+            </div>
+
+            <div class="mt-8">
+              <button type="submit" class="w-full py-3 bg-blue-600 text-white text-lg rounded-lg hover:bg-blue-700 transition shadow-md">
+                Submit Booking
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
