@@ -22,9 +22,9 @@
     <div class="absolute inset-0 bg-black bg-opacity-70 z-0"></div>
 
     <!-- Navbar -->
-    <nav class="flex flex-col md:flex-row items-center justify-between px-6 py-4 bg-transparent relative z-10 space-y-4 md:space-y-0">
+    <nav class="flex items-center justify-between px-8 py-4 bg-transparent relative z-10">
       <div class="text-3xl font-cursive text-blue-400">Airline</div>
-      <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 text-lg text-center md:text-left">
+      <ul class="flex space-x-6 text-lg">
         <li><a href="admin_data.html" class="hover:text-blue-400 transition">Home</a></li>
         <li><a href="staff_info.html" class="hover:text-blue-400 transition">Staff Information</a></li>
         <li><a href="customer_info.html" class="hover:text-blue-400 transition">Customer Information</a></li>
@@ -35,10 +35,10 @@
     </nav>
 
     <!-- Content Container -->
-    <div class="relative z-10 flex justify-center items-center min-h-[80vh] px-4 py-10">
-      <div class="bg-white text-gray-800 rounded-xl shadow-2xl w-full max-w-6xl p-4 md:p-10 overflow-x-auto">
-        <h2 class="text-2xl md:text-3xl font-bold text-center text-blue-700 mb-6">Customer Details</h2>
-        <table class="min-w-full border border-gray-300 text-xs sm:text-sm md:text-base">
+    <div class="relative z-10 flex justify-center items-center min-h-[80vh] px-6 py-12">
+      <div class="bg-white text-gray-800 rounded-xl shadow-2xl w-full max-w-6xl p-10 overflow-x-auto">
+        <h2 class="text-3xl font-bold text-center text-blue-700 mb-6">Customer Details</h2>
+        <table class="min-w-full border border-gray-300 text-sm md:text-base">
           <thead class="bg-blue-500 text-white">
             <tr>
               <th class="py-3 px-4 text-center border">Customer ID</th>
@@ -50,12 +50,12 @@
             </tr>
           </thead>
           <tbody>
-            <!-- Customer rows -->
+            <!-- Your 13 customer rows -->
             <tr class="bg-gray-50 hover:bg-gray-100">
               <td class="py-2 px-4 text-center border">CUST001</td>
               <td class="py-2 px-4 border">John Doe</td>
               <td class="py-2 px-4 border">john.doe@gmail.com</td>
-              <td class="py-2 px-4 border">+1 234 567 8901</td>
+              <td class="py-2 px-4 border">+91 234 567 8901</td>
               <td class="py-2 px-4 border">123 Main St, New York, USA</td>
               <td class="py-2 px-4 border">BK001</td>
             </tr>
@@ -63,16 +63,95 @@
               <td class="py-2 px-4 text-center border">CUST002</td>
               <td class="py-2 px-4 border">Jane Smith</td>
               <td class="py-2 px-4 border">jane.smith@gmail.com</td>
-              <td class="py-2 px-4 border">+1 987 654 3210</td>
+              <td class="py-2 px-4 border">+91 987 654 3210</td>
               <td class="py-2 px-4 border">456 Elm St, Los Angeles, USA</td>
               <td class="py-2 px-4 border">BK002</td>
             </tr>
-            <!-- ... more customer rows ... -->
+            <tr class="bg-gray-50 hover:bg-gray-100">
+              <td class="py-2 px-4 text-center border">CUST003</td>
+              <td class="py-2 px-4 border">Michael Brown</td>
+              <td class="py-2 px-4 border">michael.brown@gmail.com</td>
+              <td class="py-2 px-4 border">+91 567 890 1234</td>
+              <td class="py-2 px-4 border">789 Oak St, Chicago, USA</td>
+              <td class="py-2 px-4 border">BK003</td>
+            </tr>
+            <tr class="bg-white hover:bg-gray-100">
+              <td class="py-2 px-4 text-center border">CUST004</td>
+              <td class="py-2 px-4 border">Emily Davis</td>
+              <td class="py-2 px-4 border">emily.davis@gmail.com</td>
+              <td class="py-2 px-4 border">+91 678 345 9876</td>
+              <td class="py-2 px-4 border">321 Pine St, Miami, USA</td>
+              <td class="py-2 px-4 border">BK004</td>
+            </tr>
+            <tr class="bg-gray-50 hover:bg-gray-100">
+              <td class="py-2 px-4 text-center border">CUST005</td>
+              <td class="py-2 px-4 border">Chris Wilson</td>
+              <td class="py-2 px-4 border">chris.wilson@gmail.com</td>
+              <td class="py-2 px-4 border">+91 345 678 1234</td>
+              <td class="py-2 px-4 border">654 Maple St, Boston, USA</td>
+              <td class="py-2 px-4 border">BK005</td>
+            </tr>
+            <tr class="bg-white hover:bg-gray-100">
+              <td class="py-2 px-4 text-center border">CUST006</td>
+              <td class="py-2 px-4 border">Laura Martinez</td>
+              <td class="py-2 px-4 border">laura.martinez@gmail.com</td>
+              <td class="py-2 px-4 border">+91 456 789 0123</td>
+              <td class="py-2 px-4 border">876 Birch St, San Francisco, USA</td>
+              <td class="py-2 px-4 border">BK006</td>
+            </tr>
+            <tr class="bg-gray-50 hover:bg-gray-100">
+              <td class="py-2 px-4 text-center border">CUST007</td>
+              <td class="py-2 px-4 border">David Taylor</td>
+              <td class="py-2 px-4 border">david.taylor@gmail.com</td>
+              <td class="py-2 px-4 border">+91 789 012 3456</td>
+              <td class="py-2 px-4 border">234 Cedar St, Seattle, USA</td>
+              <td class="py-2 px-4 border">BK007</td>
+            </tr>
+            <tr class="bg-white hover:bg-gray-100">
+              <td class="py-2 px-4 text-center border">CUST008</td>
+              <td class="py-2 px-4 border">Sophia Lee</td>
+              <td class="py-2 px-4 border">sophia.lee@gmail.com</td>
+              <td class="py-2 px-4 border">+91 890 123 4567</td>
+              <td class="py-2 px-4 border">987 Palm St, Orlando, USA</td>
+              <td class="py-2 px-4 border">BK008</td>
+            </tr>
+            <tr class="bg-gray-50 hover:bg-gray-100">
+              <td class="py-2 px-4 text-center border">CUST009</td>
+              <td class="py-2 px-4 border">James Anderson</td>
+              <td class="py-2 px-4 border">james.anderson@gmail.com</td>
+              <td class="py-2 px-4 border">+91 234 567 8910</td>
+              <td class="py-2 px-4 border">543 Spruce St, Austin, USA</td>
+              <td class="py-2 px-4 border">BK009</td>
+            </tr>
+            <tr class="bg-white hover:bg-gray-100">
+              <td class="py-2 px-4 text-center border">CUST010</td>
+              <td class="py-2 px-4 border">Olivia Hernandez</td>
+              <td class="py-2 px-4 border">olivia.hernandez@gmail.com</td>
+              <td class="py-2 px-4 border">+91 123 456 7890</td>
+              <td class="py-2 px-4 border">123 Willow St, Denver, USA</td>
+              <td class="py-2 px-4 border">BK010</td>
+            </tr>
+            <tr class="bg-gray-50 hover:bg-gray-100">
+              <td class="py-2 px-4 text-center border">CUST011</td>
+              <td class="py-2 px-4 border">Matthew Jackson</td>
+              <td class="py-2 px-4 border">matthew.jackson@gmail.com</td>
+              <td class="py-2 px-4 border">+91 098 765 4321</td>
+              <td class="py-2 px-4 border">456 Cypress St, Dallas, USA</td>
+              <td class="py-2 px-4 border">BK011</td>
+            </tr>
+            <tr class="bg-white hover:bg-gray-100">
+              <td class="py-2 px-4 text-center border">CUST012</td>
+              <td class="py-2 px-4 border">Emma Gonzalez</td>
+              <td class="py-2 px-4 border">emma.gonzalez@gmail.com</td>
+              <td class="py-2 px-4 border">+91 567 890 4321</td>
+              <td class="py-2 px-4 border">789 Redwood St, Houston, USA</td>
+              <td class="py-2 px-4 border">BK012</td>
+            </tr>
             <tr class="bg-gray-50 hover:bg-gray-100">
               <td class="py-2 px-4 text-center border">CUST013</td>
               <td class="py-2 px-4 border">Alexander Lopez</td>
-              <td class="py-2 px-4 border">alexander.lopez@example.com</td>
-              <td class="py-2 px-4 border">+1 234 678 9012</td>
+              <td class="py-2 px-4 border">alexander.lopez@gmail.com</td>
+              <td class="py-2 px-4 border">+91 234 678 9012</td>
               <td class="py-2 px-4 border">321 Aspen St, Phoenix, USA</td>
               <td class="py-2 px-4 border">BK013</td>
             </tr>
